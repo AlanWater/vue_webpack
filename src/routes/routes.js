@@ -5,6 +5,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import test1 from './../templates/test1.vue';
 import test2 from './../templates/test2.vue';
+import extend from './../Extend.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -16,6 +17,10 @@ export default new Router({
         {
             path: '/test2',
             component: test2
+        },
+        {
+            path: '/extend',
+            component: extend
         }
     ]
 })

@@ -1,0 +1,9 @@
+.middle{
+    margin:0 auto;
+    text-align:center;
+}
+.grey_demo{
+    width:200px;
+    height:200px;
+    background-color:#ddd;
+}

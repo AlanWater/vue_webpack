@@ -31,11 +31,22 @@ var webpackCongig = {
                 exclude: /node_modules/
             },
             {
+                test: /\.css$/,
+                loader: ['css-loader','style-loader'],
+                exclude: /node_modules/
+            },
+            {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'file-loader',
+                exclude: /node_modules/,
                 options: {
                     name: '[name].[ext]?[hash]'
                 }
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader',
+                exclude: /node_modules/
             }
         ]
     },

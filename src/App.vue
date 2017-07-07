@@ -1,8 +1,8 @@
 <template>
-    <div id="app">
+    <div id="app" class="middle">
         <div>{{myfirstVue}}</div>
-        <router-link to="/test1/:1234">{{toFirstVue}}</router-link>
-        <router-link to="/test2">{{toSecondVue}}</router-link>
+        <router-link class="link_demo" to="/test1">{{toFirstVue}}</router-link>
+        <router-link class="link_demo" to="/test2">{{toSecondVue}}</router-link>
         <div>
             <router-view></router-view>
         </div>
@@ -16,7 +16,7 @@
         data(){
             return {
                 myfirstVue:'hellow vue!',
-                toFirstVue:'toFirstVue donts 123',
+                toFirstVue:'toFirstVue donts',
                 toSecondVue:'toSecondVue'
             }
         },
@@ -24,4 +24,6 @@
 
         }
     }
+
+
 </script>
