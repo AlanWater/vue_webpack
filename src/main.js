@@ -14,7 +14,7 @@ new Vue({
     router,
     el: '#appIndex',
     render: h => h(App)
-})
+}) 
 
 new Vue({
     router,

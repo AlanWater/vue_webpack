@@ -3,8 +3,8 @@
  */
 
 var path = require('path'),
-    webpack = require('webpack');
-
+    webpack = require('webpack'),
+    HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpackCongig = {
 
     entry:'./src/main.js',
@@ -64,7 +64,8 @@ var webpackCongig = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
+    devtool: '#eval-source-map',
+    plugins: [new HtmlWebpackPlugin()]
 }
 
 if (process.env.NODE_ENV === 'production') {
